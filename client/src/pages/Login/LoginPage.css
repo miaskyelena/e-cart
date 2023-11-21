@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Licorice&display=swap');
+
+.brand-title {
+    font-family: 'Licorice', cursive;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: -1rem;
+}
+.left-side, right-side {
+   height: 100vh;
+}
+
+.right-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media only screen and (min-width: 45em) {
+  /* 720px */
+
+  .col-10 {
+    width: 79.33%;
+  }
+  
+  .hidden-sm {
+    display: block;
+  }
+}
+
+.auth-container {
+    margin : 0 auto;
+    margin-top: 15rem;
+    width: 25rem;
+}
+
+@media only screen and (min-width: 60em) {
+  /* 960px */
+  .container {
+    width: 75%;
+    max-width: 60rem;
+  }
+}
+
+@media only screen and (max-width: 60rem) {
+    /* 320px */
+    .right-side{
+        display: none;
+    }
+
+    .auth-container {
+        width: 30rem;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .text-center {
+        text-align: center;
+        width: 90%;
+    }
+}
+

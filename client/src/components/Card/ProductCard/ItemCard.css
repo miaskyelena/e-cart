@@ -1,0 +1,9 @@
+.card h6:hover{
+    text-decoration: underline;
+    color: grey;
+    cursor: pointer;
+}
+
+a{
+    color: black;
+}
