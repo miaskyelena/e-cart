@@ -4,8 +4,6 @@ import { Navbar, Nav } from 'react-bootstrap'
 import { supabase } from '../../Client.jsx'
 import './Navigation.css'
 import "/node_modules/flag-icons/css/flag-icons.min.css";
-const { error } = await supabase.auth.signOut()
-if (error) console.log('Error logging out:', error.message)
 
 const Navigation = () => {
     const user = useUser()

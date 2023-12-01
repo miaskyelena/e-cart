@@ -7,7 +7,6 @@ const Footer = () => {
         <div className='col'>
           <h4 className='footer-title'>About Us</h4>
           <span className='footer-text'><a href='https://miaelena.netlify.app/'>Mia Tapia</a></span><br />
-        
         </div>
         <div className='col'>
           <h4 className='footer-title'>Contact Us</h4>

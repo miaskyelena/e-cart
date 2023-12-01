@@ -4,6 +4,7 @@ import { Auth } from '@supabase/auth-ui-react'
 import { ThemeSupa } from '@supabase/auth-ui-shared'
 import { supabase } from '../../Client.jsx'
 import HomePage from '../Home/HomePage.jsx'
+import ReadProducts from '../Read/ReadSellingProducts.jsx'
 import AuthPhoto from '../../assets/images/auth-photo-1.jpg'
 import './LoginPage.css'
 
@@ -57,7 +58,7 @@ const LoginPage = () => {
         )
     } else {
         return (
-            <HomePage />
+            <ReadProducts />
         )
     }
 }

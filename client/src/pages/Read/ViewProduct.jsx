@@ -4,8 +4,8 @@ import { Container, Row, Col, Button, Card } from 'react-bootstrap'
 import { AiFillHeart, AiOutlineHeart, AiOutlineForm } from 'react-icons/ai'
 import ProductsApi from '../../services/ProductsApi'
 import SearchBar from '../../components/bar/Searchbar/SearchBar'
-import './ViewListing.css'
-const ViewListing = () => {
+import './ViewProduct.css'
+const ViewProduct = () => {
     const [product, setProduct] = useState([])
     const [loading, setLoading] = useState(true)
     const [liked, setLiked] = useState(false)
@@ -23,6 +23,7 @@ const ViewListing = () => {
         fetchProduct()
     }
     , [product])
+
 
     console.log(product)
 
@@ -179,4 +180,4 @@ const ViewListing = () => {
   )
 }
 
-export default ViewListing
+export default ViewProduct;

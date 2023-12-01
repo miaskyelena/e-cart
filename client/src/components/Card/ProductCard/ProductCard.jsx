@@ -1,15 +1,19 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai'
-import './ItemCard.css'
-const ItemCard = (props) => {
+import './ProductCard.css'
+const ProductCard = (props) => {
+  const API_URL = 'http://localhost:3001'
   const [liked, setLiked] = useState(false)
   const [truncate, setTruncate] = useState(false)
-
+  const [source, setSource] = useState([])
   const handleLike = () => {
     setLiked(!liked)
   }
-  
+
+  console.log(props)
+
+
   return (
     <div className='card'
       style={{
@@ -65,6 +69,7 @@ const ItemCard = (props) => {
               whiteSpace: 'nowrap',
             }
           }>
+          { props.source !== 'selling' ?
           <Link to={`/products/${props.id}`}>
             <h6 className='mb-0 card-title'>
                 <span className='text-dark'
@@ -79,6 +84,22 @@ const ItemCard = (props) => {
                 </span>
             </h6>
           </Link>
+          :
+          <Link to={`/selling/${props.id}`}>
+            <h6 className='mb-0 card-title'>
+                <span className='text-dark'
+                style={{
+                  textOverflow: 'ellipsis',
+                  overflow: 'hidden',
+                  whiteSpace: 'nowrap',
+                  display: 'block',
+                }}
+                >
+                  {props.title}
+                </span>
+            </h6>
+          </Link>
+          }
           </div>
           <h5 className='text-dark' style={
             {
@@ -104,4 +125,4 @@ const ItemCard = (props) => {
   )
 }
 
-export default ItemCard
+export default ProductCard

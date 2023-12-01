@@ -1,0 +1,47 @@
+/*
+  <div className='filter-sidebar-container'>
+        <div className='row'>
+            <div className='col'>
+            <h4 className='filter-sidebar-title'>Filter by</h4>
+            <span className='filter-sidebar-text'>Price</span><br />
+            <span className='filter-sidebar-text'>Category</span><br />
+            <span className='filter-sidebar-text'>Brand</span><br />
+            <span className='filter-sidebar-text'>Color</span><br />
+            </div>
+        </div>
+        </div>
+
+*/
+
+
+/* Path: client/src/components/Bar/SideBar/FilterSideBar.css */
+
+
+.filter-sidebar-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #fff;
+    border-right: 1px solid #e6e6e6;
+}
+
+.filter-sidebar-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.filter-sidebar-text {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.filter-sidebar-text:hover {
+    color: #ff6a00;
+    cursor: pointer;
+}

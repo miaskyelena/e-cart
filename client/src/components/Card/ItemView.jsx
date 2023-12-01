@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import { Row, Col, Container } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css'; 
-import ItemCard from '../ProductCard/ItemCard'
+import ItemCard from '../ProductCard/ProductCard'
 import './ItemView.css'
 
-const ItemSelling= () => {
+const ItemView = ({}) => {
     const [allItems, setAllItems] = useState([])
 
     useEffect(() => {
@@ -19,25 +20,29 @@ const ItemSelling= () => {
     }
     , [])
 
+
   return (
     <>
-        <div className='container-fluid ps-5 pe-5 bg-light'>
+        <div className='container-fluid ps-5 pe-5'>
             <Row>
-                <Col className='mb-4'>
+                <Col className='mb-3 mt-4'>
                     <h4 className='text-left'
                     style={{
                         fontFamily: 'Arial',
                     }}
-                    >Your Selling Items
-                    </h4>
-                    <span className='text-muted'>Items you are selling will appear here.</span>
+                    >Your Recently Viewed Items</h4>
                 </Col>
             </Row>
             <Row
             className='d-flex justify-content-center w-100 h-100' 
+            style={
+                {
+                    overflow: 'hidden',
+                }
+            }
             >
                 <Col>
-                    <OwlCarousel className='owl-theme' loop margin={10} nav
+                    <OwlCarousel className='owl-theme' loop margin={10} 
                     responsive={{
                         0: {
                             items: 1,
@@ -49,6 +54,7 @@ const ItemSelling= () => {
                             items: 5,
                         },
                     }}
+                    nav
                     >
                         {allItems.map((item) => (
                             <ItemCard 
@@ -58,6 +64,7 @@ const ItemSelling= () => {
                             price={item.price}
                             image={item.image}
                             category={item.category}
+                            rating={item.rating}
                             />
                         ))}
                     </OwlCarousel>
@@ -71,4 +78,4 @@ const ItemSelling= () => {
   )
 }
 
-export default ItemSelling;
+export default ItemView
