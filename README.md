@@ -2,7 +2,7 @@
 
 An full-stack ecommerce web app.
 
-Designed and developed by: William McPhail and Mia Tapia
+Designed and developed by: Mia Tapia
 
 🔗 Link to deployed app:
 
