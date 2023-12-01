@@ -1,27 +1,42 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import BannerImage from '../../components/banner/BannerImage'
-import ItemView from '../../components/card/ViewCard/ItemView'
-import ItemLiked from '../../components/card/ViewCard/ItemLiked'
-import ItemSelling from '../../components/card/ViewCard/ItemSelling'
 import SellerBanner from '../../components/banner/SellerBanner'
 import SearchBar from '../../components/Bar/SearchBar/SearchBar'
-import CustomerReviews from '../../components/card/ViewCard/CustomerReviews'
+import ProductCarousel from '../../components/Card/ProductCarousel/ProductCarousel'
 import Footer from '../../components/footer/Footer'
-import CategoriesBar from '../../components/bar/CategoriesBar/CategoriesBar'
 import { Container, Row, Col } from 'react-bootstrap'
 import { useUser, useSupabaseClient } from '@supabase/auth-helpers-react'
 import './HomePage.css'
-const HomePage = () => {
+const HomePage = ( sellingProducts ) => {
+
+
+const [products, setProducts] = useState([])
+
+useEffect(() => {
+  setProducts(sellingProducts)
+}
+, [sellingProducts])
+
+console.log(products)
+
 
   return (
     <>
       <SearchBar />
         <BannerImage />
-        <ItemView />
-        <ItemLiked />
+        &nbsp;
+        <ProductCarousel
+        title='All products'
+        subtitle='Products reccomended for you.'
+        data={sellingProducts.allProducts}
+       />
+        <ProductCarousel
+        title='Selling products'
+        subtitle='Products you are currently selling.'
+        data={sellingProducts.sellingProducts}
+        />
         <SellerBanner />
-        <ItemSelling />
-        <CustomerReviews />
+
       <Footer />
     </>
   )

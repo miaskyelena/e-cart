@@ -6,6 +6,7 @@ import BannerPhoto4 from '../../assets/images/banner-image-4.jpg'
 import BannerPhoto5 from '../../assets/images/banner-image-11.jpg'
 import BannerPhoto6 from '../../assets/images/banner-image-1.jpg'
 import { Button } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import './BannerImage.css'
 const BannerImage = () => {
   return (
@@ -47,7 +48,9 @@ const BannerImage = () => {
     </span>
     &nbsp;
     <div className='banner-button-container'>
+      <Link to='/allProducts'>
       <Button variant='success' className='ms-4 sell-button'>Shop now</Button>
+      </Link>
     </div>
   </div>
 

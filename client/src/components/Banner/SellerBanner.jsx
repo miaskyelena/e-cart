@@ -1,43 +1,44 @@
-import React from 'react'
-import SellerBannerPhoto from '../../assets/images/seller.jpg'
-import StylePhoto from '../../assets/images/style2.jpg'
-import { Container, Row, Col, Card, Image, Button} from 'react-bootstrap'
-import './SellerBanner.css'
+import React from 'react';
+import SellerBannerPhoto from '../../assets/images/seller.jpg';
+import { Card } from 'react-bootstrap';
+import './SellerBanner.css';
+
 const SellerBanner = () => {
   return (
-     <Container className='seller-banner-container mt-5 bg-light pt-5' fluid>
-       <Row className='seller-banner-row w-100'>
-            <Col className='seller-banner-col'>
-                <Image src={SellerBannerPhoto} className='seller-banner-photo' rounded />
-            </Col>
-           <Col>
-            <h2 className='seller-banner-title'>Become a Seller</h2>
-            <hr />
-            <p className='seller-banner-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <h5 className='seller-banner-subtitle'
-            style={{
-                fontFamily: 'Arial',
-                fontSize: '1rem',
-            }}
-            >What our sellers are saying: </h5>
-                <Card className='seller-banner-card'>
-                    <Card.Body>
-                        <Card.Title className='seller-banner-title'>Seller Name</Card.Title>
-                        <div className='card-subtitle mb-2 text-muted'>
-                            <span className='seller-banner-subtitle'>23, New York City</span>
-                        </div>
-                        <Card.Text className='seller-banner-text'>
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                        </Card.Text>
-                    </Card.Body>
-                </Card>
-                <br />
-                <Button variant='clear' className='seller-banner-button' href='/s'>Get Started</Button>
-            </Col> 
-        </Row>
-        <br />
-      </Container>
-  )
-}
+    <Card className="bg-dark text-white mt-3" 
+    style={{ 
+      height: '400px',
+      backgroundImage: `url(${SellerBannerPhoto})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+      }}
+    >
+      <Card.ImgOverlay
+        style={{
+            backgroundColor: 'rgba(0,0,0,0.5)',
+        }}
+      >
+        <h1 className="text-center mt-5">Become a seller</h1>
+        <Card.Text className="text-center">
+          Earn extra cash by selling your products on our marketplace
+        </Card.Text>
+        <Card.Text className="text-center">
+          <button className="btn btn-light" style={
+            {
+              borderRadius: '50px',
+                padding: '10px 30px',
+                fontSize: '1.2rem',
+                fontWeight: 'bold',
+                
+            }
+          
+          }>Learn more</button>
+        </Card.Text>
+        
+      </Card.ImgOverlay>
+    </Card>
+  );
+};
 
-export default SellerBanner
+export default SellerBanner;

@@ -15,9 +15,13 @@ const SearchBar = () => {
               categories
             </button>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Pet & Home</a></li>
-              <li><a class="dropdown-item" href="#">Outdoor</a></li>
-              <li><a class="dropdown-item" href="#">Clothing & Apparel</a></li>
+              <li><a class="dropdown-item" href="#">Men's clothing</a></li>
+              <li><a class="dropdown-item" href="#">Women's clothing</a></li>
+              <li><a class="dropdown-item" href="#">Dresses & Skirts</a></li>
+              <li><a class="dropdown-item" href="#">Jewelery</a></li>
+              <li><a class="dropdown-item" href="#">Electronics</a></li>
+              <li><a class="dropdown-item" href="#">Tops & Blouses</a></li>
+              <li><a class="dropdown-item" href="#">Bags & Shoes</a></li>            
             </ul>
           </div>
           <SearchInput />
@@ -26,8 +30,8 @@ const SearchBar = () => {
               Sell 
             </Link>
           </Nav.Link>
-          <Nav.Link href='/home'>
-            Features
+          <Nav.Link href='/allProducts'>
+             Shop
           </Nav.Link>   
           <Nav.Link href='/'>
             <BiUserCircle size={25}/>
