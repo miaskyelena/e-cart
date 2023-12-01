@@ -9,7 +9,6 @@ import CustomerReviews from '../../components/card/ViewCard/CustomerReviews'
 import Footer from '../../components/footer/Footer'
 import CategoriesBar from '../../components/bar/CategoriesBar/CategoriesBar'
 import { Container, Row, Col } from 'react-bootstrap'
-import { useUser, useSupabaseClient } from '@supabase/auth-helpers-react'
 import './HomePage.css'
 const HomePage = () => {
 
