@@ -5,6 +5,7 @@ import { Container, Row, Col, Card, Button} from 'react-bootstrap'
 import SearchBar from '../../components/bar/SearchBar/SearchBar.jsx'
 import ProductsApi from '../../services/ProductsApi.jsx'
 import Images from '../../components/image/Images.jsx'
+
 const CreateListing = () => {
     const [newProduct, setNewProduct] = useState({
         title: '',
@@ -14,32 +15,33 @@ const CreateListing = () => {
         image_url: '',
     })
 
-    const handleChange = (event) => {
-        const { name, value } = event.target
-        setNewProduct(prevState => ({
-            ...prevState,
+const handleChange = (event) => {
+    const { name, value } = event.target
+    setNewProduct( (prev) => {
+        return {
+            ...prev,
             [name]: value,
-        }))
+        }
+    }
+    )
+}
+
+const createProduct = async (event) => {
+    event.preventDefault()
+
+    const options = {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(newProduct),
     }
 
-    const createProduct = async (event) => {
-        event.preventDefault()
-        
-        await supabase 
-        .from('products')
-        .insert([
-            {
-                title: newProduct.title,
-                price: newProduct.price,
-                description: newProduct.description,
-                category: newProduct.category,
-                image_url: newProduct.image_url,
-            }
-        ])
-        .select()
-        alert('Product created!');
-        <Navigate to='/' />
-    }
+    await fetch ('http://localhost:3001', options)
+    .then(response => response.json())
+    .catch(error => console.log(error))
+}
+
 
   return (
     <>
@@ -91,12 +93,14 @@ const CreateListing = () => {
             lg={4}
             xl={4}
             >
-            <form className='create-product-form' onSubmit={createProduct}>
+            <form className='create-product-form'>
                 <h5 className='text-dark'>Title</h5>
                 <input 
                 className='form-control'
                 type='text' 
+                id='title'
                 name='title'
+                value={newProduct.title}
                 placeholder='Title' 
                 onChange={handleChange}
                 required
@@ -106,12 +110,12 @@ const CreateListing = () => {
                 </div>
                 <div className='d-flex justify-content-between'>
                     
-                        <select className='form-select' aria-label='Default select example'>
-                            <option selected>Category</option>
-                            <option value='1'>Electronics</option>
-                            <option value='2'>Clothing</option>
-                            <option value='3'>Home</option>
-                        </select>
+                    
+
+
+
+
+
 
                 </div>
                 
@@ -135,6 +139,8 @@ const CreateListing = () => {
                     className='form-control'
                     type='text'
                     name='price'
+                    id='price'
+                    value={newProduct.price}
                     placeholder='Price ' 
                     onChange={handleChange}
                     required
@@ -146,6 +152,8 @@ const CreateListing = () => {
                     className='form-control'
                     type='text' 
                     name='image_url'
+                    id='image_url'
+                    value={newProduct.image_url}
                     placeholder='Image url'
                     onChange={handleChange}
                     required
@@ -155,7 +163,10 @@ const CreateListing = () => {
                 <p className='small text-muted'>
                     <textarea 
                     className='form-control'
+                    type='text'
                     name='description'
+                    id='description'
+                    value={newProduct.description}
                     rows='5' 
                     placeholder='Describe your product below. Include all relevant information.'
                     onChange={handleChange}
@@ -180,7 +191,12 @@ const CreateListing = () => {
                 }>Seller</h5>
                 <p className='small text-muted'>Seller Details</p>
                 <div className='d-flex justify-content-between mt-5'>
-                    <Button variant='outline-success' className='w-100'>Create</Button>
+                    <Button 
+                    variant='outline-success' 
+                    className='w-100'
+                    type='submit'
+                    onClick={createProduct}
+                    >Create</Button>
                     &nbsp;
                 </div>
             </form>

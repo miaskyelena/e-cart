@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import ProductCard from '../../components/card/ProductCard/ProductCard'
 import ReactPaginate from 'react-paginate'
+import SearchBar from '../../components/Bar/SearchBar/SearchBar'
 const ReadSellingProducts = ( props ) => {
     const [listings, setListings] = useState([])
 
@@ -19,6 +20,7 @@ const ReadSellingProducts = ( props ) => {
 
     return (
         <div className="ReadProducts">
+            <SearchBar />
             <div className="container">
                 <Link to='/allProducts' className='btn btn-primary'>View All Products</Link>
                 <h1 className='text-center'>Buy, sell, and shop for anything.</h1><br/>

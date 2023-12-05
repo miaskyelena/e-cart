@@ -2,7 +2,7 @@
     {
         "id": 1,
         "source": "selling",
-        "title": "VICTORIA VICTORIA BECKHAM",
+        "title": "Victoria Victoria Beckham Printed Mini Dress w/ Tags",
         "price": 52.50,
         "size": " S | US4, UK8",
         "image":"https://product-images.therealreal.com/WVV30184_1_enlarged.jpg?width=1500",
@@ -10,13 +10,13 @@
         "fabric":"97% Polyester, 3% Elastane; Combo 100% Polyester; Combo 2 100% Polyester",
         "condition":"Pristine",
         "rating": 4.5,
-        "category":"Dresses",
+        "category":"women's clothing",
         "listing":"https://www.therealreal.com/products/women/clothing/dresses/victoria-victoria-beckham-printed-mini-dress-w-tags-iydna"
     },
     {
         "id": 2,
         "source": "selling",
-        "title": "SARAH PACINI",
+        "title": "Sarah Pacini Pleated Accents Pant Set",
         "price": 78.75,
         "size": "S",
         "image":"https://product-images.therealreal.com/WSARP22160_1_enlarged.jpg?width=1005",
@@ -24,13 +24,13 @@
         "fabric":"100% Linen",
         "condition":"Excellent",
         "rating": 4.5,
-        "category":"Suits & Sets",
+        "category":"women's clothing",
         "listing":"https://www.therealreal.com/products/women/clothing/suits-and-sets/sarah-pacini-pleated-accents-pant-set-iat70"
     },
     {
         "id": 3,
         "source": "selling",
-        "title": "MANOLO BLAHNIK",
+        "title": "Manolo Blahnik Leather Slingback Sandals",
         "price": 95.00,
         "size": "Size: 9 | IT 39",
         "image":"https://product-images.therealreal.com/MOO250617_1_enlarged.jpg?width=1500",
@@ -38,13 +38,13 @@
         "fabric":"Leather",
         "condition":"Pristine",
         "rating": 4.5,
-        "category":"Shoes",
+        "category":"shoes & bags",
         "listing":"https://www.therealreal.com/products/women/shoes/sandals/manolo-blahnik-leather-slingback-sandals-iu02b"
     },
     {
         "id": 4,
         "source": "selling",
-        "title": "MARNI",
+        "title": "Marni Plunge Neckline Sleeveless Blouse",
         "price": 90.00,
         "size": "M | US6, IT42",
         "image":"https://product-images.therealreal.com/MAN201019_1_enlarged.jpg?width=1005",
@@ -52,13 +52,13 @@
         "fabric":" 100% Triacetate; Lining 100% Triacetate",
         "condition":"Excellent",
         "rating": 4.5,
-        "category":"Tops",
+        "category":"tops & blouses",
         "listing":"https://www.therealreal.com/products/women/clothing/tops/marni-plunge-neckline-sleeveless-blouse-irdob"
     },
     {
         "id": 5,
         "source": "selling",
-        "title": "PRADA",
+        "title": "Prada Tessuto Re-Edition 2000 Hobo",
         "price": 975.00,
         "size": "One Size",
         "fabric":"Nylon",
@@ -66,13 +66,13 @@
         "description":"Tessuto Re-Edition 2000 Hobo",
         "condition":"Excellent",
         "rating": 4.5,
-        "category":"Bags",
+        "category":"shoes & bags",
         "listing": "https://www.therealreal.com/products/women/handbags/shoulder-bags/prada-tessuto-re-edition-2000-hobo-it3d0"
     },
     {
         "id": 6,
         "source": "selling",
-        "title": "KOOS VAN DEN AKKER",
+        "title": "Koos Van Den Akker Vintage Knee-Length Skirt",
         "price": 220.50,
         "size": "S",
         "image":"https://product-images.therealreal.com/KOOSC20563_1_enlarged.jpg?width=1005",
@@ -80,13 +80,13 @@
         "fabric":" Not listed, feels like cotton",
         "condition":"Very Good",
         "rating": 4.5,
-        "category":"Skirts",
+        "category":"women's clothing",
         "listing":"https://www.therealreal.com/products/women/clothing/skirts/koos-van-den-akker-vintage-knee-length-skirt-ir3wy"
     },
     {
         "id": 7,
         "source": "selling",
-        "title": "D&G",
+        "title": "D&G Vintage Midi Length Dress",
         "price": 220.00,
         "size": "M | US6 | IT42",
         "image":"https://product-images.therealreal.com/WDG90654_1_enlarged.jpg?width=1005",
@@ -94,13 +94,13 @@
         "fabric":"67% Viscose, 30% Virgin Wool, 3% Other Fibers",
         "condition":"Very Good",
         "rating": 4.5,
-        "category":"Dresses",
+        "category": "women's clothing",
         "listing":"https://www.therealreal.com/products/women/clothing/dresses/d-g-vintage-midi-length-dress-iotbl"
     },
     {
         "id": 8,
         "source": "selling",
-        "title": "ANNA SUI",
+        "title": "Anna Sui Vintage 1990's Sweater",
         "price": 116.00,
         "size": "XS",
         "image":"https://product-images.therealreal.com/ANA34704_1_enlarged.jpg?width=1005",
@@ -108,13 +108,13 @@
         "fabric":"40% Mohair, 30% Acrylic, 30% Polyamide",
         "condition":"Very Good",
         "rating": 4.5,
-        "category":"Knitwear",
+        "category":"knitwear",
         "listing":"https://www.therealreal.com/products/women/clothing/knitwear/anna-sui-vintage-1990-s-sweater-imq3u"
     },
     {
         "id": 9,
         "source": "selling",
-        "title": "CHLOÉ",
+        "title": "Chloé Vintage Knee-Length Skirt",
         "price": 196.00,
         "size": " M | US8, FR40",
         "image":"https://product-images.therealreal.com/CHL269367_1_enlarged.jpg?width=1005",
@@ -122,13 +122,13 @@
         "fabric":" 100% Silk; Lining 82% Viscose, 18% Silk",
         "condition":"Excellent", 
         "rating": 4.5,
-        "category":"Skirts",
+        "category":"skirts",
         "listing":"https://www.therealreal.com/products/women/clothing/skirts/chloe-vintage-knee-length-skirt-iq7fr"
     },
     {
         "id": 10,
         "source": "selling",
-        "title": "CHANEL",
+        "title": "Chanel Vintage 1990's Tweed Skirt Suit",
         "price": 4200.000,
         "size": "Small",
         "image":"https://product-images.therealreal.com/CHA948446_1_enlarged.jpg?width=1500",
@@ -136,7 +136,7 @@
         "fabric":"Leather",
         "condition":"Excellent",
         "rating": 4.5,
-        "category":"Bags",
+        "category":"shoes & bags",
         "listing": "https://www.therealreal.com/products/women/handbags/crossbody-bags/chanel-small-filigree-vanity-case-irpyh"
     }
 ]

@@ -33,7 +33,7 @@ const SearchBar = () => {
           <Nav.Link href='/allProducts'>
              Shop
           </Nav.Link>   
-          <Nav.Link href='/'>
+          <Nav.Link href='/sellingProducts'>
             <BiUserCircle size={25}/>
           </Nav.Link>
           <Nav.Link href='/'>
