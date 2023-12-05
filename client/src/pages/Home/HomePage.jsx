@@ -6,7 +6,6 @@ import FilterTopBar from '../../components/Bar/TopBar/FilterTopBar'
 import ProductCarousel from '../../components/Card/ProductCarousel/ProductCarousel'
 import Footer from '../../components/footer/Footer'
 import { Container, Row, Col } from 'react-bootstrap'
-import { useUser, useSupabaseClient } from '@supabase/auth-helpers-react'
 import './HomePage.css'
 const HomePage = ( sellingProducts ) => {
 
