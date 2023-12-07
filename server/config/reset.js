@@ -26,17 +26,14 @@ const createProductsTable = async () => {
     const createProductsTableQuery = `
         CREATE TABLE IF NOT EXISTS products (
             id SERIAL PRIMARY KEY,
-            source VARCHAR(255),
             title VARCHAR(255),
             price DECIMAL,
             size VARCHAR(255),
             image VARCHAR(255),
-            description VARCHAR(255),
-            fabric VARCHAR(255),
+            description VARCHAR(500),
             condition VARCHAR(255),
-            rating DECIMAL,
             category VARCHAR(255),
-            listing VARCHAR(255)
+            color VARCHAR(255),
         )
     `
 
@@ -54,22 +51,19 @@ const seedProductsTable = async () => {
 
     productsData.forEach((product) => {
         const insertProductQuery = `
-            INSERT INTO products (source, title, price, size, image, description, fabric, condition, rating, category, listing)
-            VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11)
+            INSERT INTO products (title, price, size, image, color, description, condition, category)
+            VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
         `
 
         const productValues = [
-            product.source,
             product.title,
             product.price,
             product.size,
             product.image,
+            product.color,
             product.description,
-            product.fabric,
             product.condition,
-            product.rating,
-            product.category,
-            product.listing
+            product.category
         ]
 
         try {

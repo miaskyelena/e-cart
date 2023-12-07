@@ -60,7 +60,7 @@ const App = () => {
         { path: '/sellingProducts', element: <ReadSellingProducts data={sellingProducts}/>},
         { path: '/allProducts', element: <ReadAllProducts data={allProducts}/>},
         { path: '/login', element: <LoginPage />},
-        { path: '/create', element: <CreateLisiting />},
+        { path: '/create', element: <CreateLisiting api_url={API_URL}/>},
         { path: '/edit/:id', element: <EditListing />},
         { path: '/products/:id', element: <ViewProduct/>}, 
         { path: '*', element: <ErrorPage /> }    

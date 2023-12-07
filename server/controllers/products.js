@@ -2,12 +2,12 @@ import { pool } from '../config/database.js'
 
 const createProduct = async (req, res) => {
     try {
-        const { source, title, price, size, image, description, fabric, condition, rating, category, listing } = req.body
+        const {title, price, size, image, color, description, condition, category } = req.body
        
         const results = await pool.query(
-            `INSERT INTO products (source, title, price, size, image, description, fabric, condition, rating, category, listing)
-            VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING *`,
-            [key, title, price, size, image, description, fabric, condition, rating, category, listing]
+            `INSERT INTO products ( title, price, size, image, color, description, condition, category)
+            VALUES ($1, $2, $3, $4, $5, $6, $7, $8)`,
+            [ title, price, size, image, color, description,  condition, category]
         )
     }
     catch (error) {
