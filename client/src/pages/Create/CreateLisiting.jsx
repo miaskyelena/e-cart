@@ -26,8 +26,7 @@ const handleChange = (event) => {
             ...prev,
             [name]: value,
         }
-    }
-    )
+    })
 }
 
 const createProduct = async (event) => {
@@ -42,8 +41,7 @@ const createProduct = async (event) => {
     }
 
     await fetch(`${api_url}/api/products`, options)
-    .then(response => response.json())
-    .catch(error => console.log(error))
+    window.location.href = '/'
 }
 
 
@@ -85,19 +83,8 @@ const createProduct = async (event) => {
             <Col className='mx-auto ms-5 me-5' xs={12} sm={10} md={4} lg={4} xl={4}>
             <form className='create-product-form'>
                 <h5 className='text-dark'>Title</h5>
-                <input 
-                className='form-control'
-                type='text' 
-                id='title'
-                name='title'
-                value={newProduct.title}
-                placeholder='Title' 
-                onChange={handleChange}
-                required
-                />
+                <input className='form-control' type='text' id='title' name='title' value={newProduct.title} onChange={handleChange} placeholder='Title' required />
                 <br />
-                <div className='d-flex justify-content-between'>
-                </div>
                 <div className='d-flex justify-content-between'>
                 <select
                 className='form-control'
@@ -229,15 +216,7 @@ const createProduct = async (event) => {
                      />
                 </p>
                 <br />
-                <Button
-                className='btn w-100'
-                variant='outline-primary'
-                type='submit'
-                onClick={createProduct}
-                >
-                    Create
-
-                </Button>
+                <input type ='submit' className='btn btn-dark' value='Create Listing' onClick={createProduct} />
 
             </form>
             </Col>
