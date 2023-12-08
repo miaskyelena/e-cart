@@ -73,7 +73,7 @@ const deleteProduct = async (req, res) => {
     }
 }
 
-export {
+export default{
     createProduct,
     getProducts,
     getProduct,

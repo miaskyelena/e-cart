@@ -2,111 +2,111 @@
     {
         "id": 1,
         "title": "Victoria Victoria Beckham Printed Mini Dress w/ Tags",
-        "price": 52.50,
         "size": " Small",
         "image":"https://product-images.therealreal.com/WVV30184_1_enlarged.jpg?width=1500",
         "description":"Printed Mini Dress w/ Tags",
         "condition":"Pristine",
         "category":"Clothing",
-        "color":"Black"
+        "color":"Black",
+        "price": 195.00
     },
     {
         "id": 2,
         "title": "Sarah Pacini Pleated Accents Pant Set",
-        "price": 78.75,
         "size": "Small",
         "image":"https://product-images.therealreal.com/WSARP22160_1_enlarged.jpg?width=1005",
         "description":"Pleated Accents Pant Set",
         "condition":"Pristine",
         "category":"Clothing",
-        "color":"Black"
+        "color":"Black",
+        "price": 195.00
     },
     {
         "id": 3,
         "title": "Manolo Blahnik Leather Slingback Sandals",
-        "price": 95.00,
         "size": "Medium",
         "image":"https://product-images.therealreal.com/MOO250617_1_enlarged.jpg?width=1500",
         "description":"Leather Slingback Sandals",
         "condition":"Pristine",
         "category":"Clothing",
-        "color":"Black"
+        "color":"Black",
+        "price": 195.00
     },
     {
         "id": 4,
         "title": "Marni Plunge Neckline Sleeveless Blouse",
-        "price": 90.00,
         "size": "Medium",
         "image":"https://product-images.therealreal.com/MAN201019_1_enlarged.jpg?width=1005",
         "description":"Plunge Neckline Sleeveless Blouse",
         "condition":"Pristine",
         "category":"Clothing",
-        "color":"Black"
+        "color":"Black",
+        "price": 195.00
     },
     {
         "id": 5,
         "title": "Prada Tessuto Re-Edition 2000 Hobo",
-        "price": 975.00,
         "size": "Medium",
         "image":"https://product-images.therealreal.com/PRA877512_1_enlarged.jpg?width=1500",
         "description":"Tessuto Re-Edition 2000 Hobo",
         "condition":"Pristine",
         "category":"Clothing",
-        "color":"Black"
+        "color":"Black",
+        "price": 195.00
     },
     {
         "id": 6,
         "title": "Koos Van Den Akker Vintage Knee-Length Skirt",
-        "price": 220.50,
         "size": "Small",
         "image":"https://product-images.therealreal.com/KOOSC20563_1_enlarged.jpg?width=1005",
         "description":"Vintage Knee-Length Skirt",
         "condition":"Pristine",
         "category":"Clothing",
-        "color":"Black"
+        "color":"Black",
+        "price": 195.00
     },
     {
         "id": 7,
         "title": "D&G Vintage Midi Length Dress",
-        "price": 220.00,
         "size": "Medium",
         "image":"https://product-images.therealreal.com/WDG90654_1_enlarged.jpg?width=1005",
         "description":"Vintage Midi Length Dress",
         "condition":"Pristine",
         "category": "Clothing",
-        "color":"Black"
+        "color":"Black",
+        "price": 195.00
     },
     {
         "id": 8,
         "title": "Anna Sui Vintage 1990's Sweater",
-        "price": 116.00,
         "size": "Medium",
         "image":"https://product-images.therealreal.com/ANA34704_1_enlarged.jpg?width=1005",
         "description":"Vintage 1990's Sweater",
         "condition":"Pristine",
         "category":"Clothing",
-        "color":"Black"
+        "color":"Black",
+        "price": 195.00
     },
     {
         "id": 9,
         "title": "Chloé Vintage Knee-Length Skirt",
-        "price": 196.00,
         "size": "Small",
         "image":"https://product-images.therealreal.com/CHL269367_1_enlarged.jpg?width=1005",
         "description":"Vintage Knee-Length Skirt",
         "condition":"Pristine", 
         "category":"Clothing",
-        "color":"Black"
+        "color":"Black",
+        "price": 195.00
         },
     {
         "id": 10,
         "title": "Chanel Vintage 1990's Tweed Skirt Suit",
-        "price": 4200.000,
         "size": "Small",
         "image":"https://product-images.therealreal.com/CHA948446_1_enlarged.jpg?width=1500",
         "description":"Small CC Filigree Vanity Case",
         "condition":"Pristine",
         "category":"Clothing",
-        "color":"Black"
-    }
+        "color":"Black",
+        "price": 195.00
+        }
 ]

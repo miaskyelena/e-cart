@@ -229,6 +229,16 @@ const createProduct = async (event) => {
                      />
                 </p>
                 <br />
+                <Button
+                className='btn w-100'
+                variant='outline-primary'
+                type='submit'
+                onClick={createProduct}
+                >
+                    Create
+
+                </Button>
+
             </form>
             </Col>
         </Row>
