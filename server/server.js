@@ -9,6 +9,7 @@ const PORT = process.env.PORT || 3001
 app.use(cors())
 app.use(express.json())
 
+// app routes
 app.use('/api/products', productRoutes)
 
 app.get('/', (req, res) => {

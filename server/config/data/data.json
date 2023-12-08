@@ -17,7 +17,6 @@
         "size": "Small",
         "image":"https://product-images.therealreal.com/WSARP22160_1_enlarged.jpg?width=1005",
         "description":"Pleated Accents Pant Set",
-        "fabric":"100% Linen",
         "condition":"Pristine",
         "category":"Clothing",
         "color":"Black"
@@ -35,14 +34,12 @@
     },
     {
         "id": 4,
-        "source": "selling",
         "title": "Marni Plunge Neckline Sleeveless Blouse",
         "price": 90.00,
         "size": "Medium",
         "image":"https://product-images.therealreal.com/MAN201019_1_enlarged.jpg?width=1005",
         "description":"Plunge Neckline Sleeveless Blouse",
         "condition":"Pristine",
-        "rating": 4.5,
         "category":"Clothing",
         "color":"Black"
     },
@@ -76,7 +73,7 @@
         "image":"https://product-images.therealreal.com/WDG90654_1_enlarged.jpg?width=1005",
         "description":"Vintage Midi Length Dress",
         "condition":"Pristine",
-        "category": "women's clothing",
+        "category": "Clothing",
         "color":"Black"
     },
     {
