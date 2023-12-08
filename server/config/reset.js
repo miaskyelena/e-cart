@@ -12,26 +12,7 @@ const productsData = JSON.parse(productsFile)
  "id": 1,
         "title": "VICTORIA VICTORIA BECKHAM",
         "price": 52.50,
-        "size": " S | US4, UK8",
-        "image":"https://product-images.therealreal.com/WVV30184_1_enlarged.jpg?width=1500",
-        "description":"Printed Mini Dress w/ Tags",
-        "fabric":"97% Polyester, 3% Elastane; Combo 100% Polyester; Combo 2 100% Polyester",
-        "condition":"Pristine",
-        "rating": 4.5,
-        "category":"Dresses",
-        "listing":"https://www.therealreal.com/products/women/clothing/dresses/victoria-victoria-beckham-printed-mini-dress-w-tags-iydna"
-
-**/
-const createProductsTable = async () => {
-    const createProductsTableQuery = `
-        CREATE TABLE IF NOT EXISTS products (
-            id SERIAL PRIMARY KEY,
-            title VARCHAR(255),
-            price DECIMAL,
-            size VARCHAR(255),
-            image VARCHAR(255),
-            description VARCHAR(500),
-            condition VARCHAR(255),
+ cdvbfgev       condition VARCHAR(255),
             category VARCHAR(255),
             color VARCHAR(255),
         )
