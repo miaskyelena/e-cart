@@ -2,8 +2,10 @@ import React, {useEffect, useState} from 'react'
 import BannerImage from '../../components/banner/BannerImage'
 import SellerBanner from '../../components/banner/SellerBanner'
 import SearchBar from '../../components/Bar/SearchBar/SearchBar'
+import FilterTopBar from '../../components/Bar/TopBar/FilterTopBar'
 import ProductCarousel from '../../components/Card/ProductCarousel/ProductCarousel'
 import Footer from '../../components/footer/Footer'
+import { Container, Row, Col } from 'react-bootstrap'
 import './HomePage.css'
 const HomePage = ( sellingProducts ) => {
 
@@ -33,6 +35,7 @@ console.log(products)
         subtitle='Products you are currently selling.'
         data={sellingProducts.sellingProducts}
         />
+         1 
         <SellerBanner />
 
       <Footer />
