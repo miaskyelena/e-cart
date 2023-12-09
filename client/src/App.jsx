@@ -10,6 +10,7 @@ import ReadAllProducts from './pages/Read/ReadAllProducts.jsx'
 import ViewProduct from './pages/Read/ViewProduct.jsx'
 import EditListing from './pages/update/EditListing.jsx'
 import CreateLisiting from './pages/create/CreateLisiting.jsx'
+import CreateListingTest from './pages/Create/CreateListingTest.jsx'
 import ErrorPage from './pages/ErrorPage.jsx'
 const App = () => {
   const API_URL = 'http://localhost:3001'
@@ -60,7 +61,7 @@ const App = () => {
         { path: '/sellingProducts', element: <ReadSellingProducts data={sellingProducts}/>},
         { path: '/allProducts', element: <ReadAllProducts data={allProducts}/>},
         { path: '/login', element: <LoginPage />},
-        { path: '/create', element: <CreateLisiting api_url={API_URL}/>},
+        { path: '/create', element: <CreateListingTest api_url={API_URL} />},
         { path: '/edit/:id', element: <EditListing />},
         { path: '/products/:id', element: <ViewProduct/>}, 
         { path: '*', element: <ErrorPage /> }    
