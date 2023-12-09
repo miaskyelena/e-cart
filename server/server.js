@@ -4,18 +4,23 @@ import cors from 'cors'
 import productRoutes from './routes/products.js'
 
 const app = express()
-const PORT = process.env.PORT || 3001
 
-app.use(cors())
 app.use(express.json())
+app.use(cors({
+    origin: 'http://localhost:3001',
+    methods: 'GET,PUT,PATCH,POST,DELETE',
+    credenqtials: true
+}))
+
 
 // app routes
 app.use('/api/products', productRoutes)
 
 app.get('/', (req, res) => {
     res.send('Hello from Express!')
-}
-)
+})
+
+const PORT = process.env.PORT || 3001
 
 app.listen(PORT, () => console.log(`Server running on port: http://localhost:${PORT}`))
 
