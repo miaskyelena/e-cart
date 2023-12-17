@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { Navbar, Nav, Button } from 'react-bootstrap'
 import { BiUserCircle } from 'react-icons/bi'
-import { AiOutlineShoppingCart } from 'react-icons/ai'
+import { AiOutlineShoppingCart, AiOutlineHeart } from 'react-icons/ai'
+import { MdOutlineShoppingBag } from "react-icons/md";
 import { Link } from 'react-router-dom'
 import SearchInput from './SearchInput'
 import './SearchBar.css'
@@ -25,19 +26,14 @@ const SearchBar = () => {
             </ul>
           </div>
           <SearchInput />
-          <Nav.Link>
-            <Link to='/create' className='text-muted'>
-              Sell 
-            </Link>
+          <Nav.Link href='/products'>
+            <AiOutlineHeart size={25}/>
           </Nav.Link>
-          <Nav.Link href='/allProducts'>
-             Shop
-          </Nav.Link>   
-          <Nav.Link href='/sellingProducts'>
+          <Nav.Link href='/products'>
             <BiUserCircle size={25}/>
           </Nav.Link>
           <Nav.Link href='/'>
-            <AiOutlineShoppingCart size={25}/>
+            <MdOutlineShoppingBag size={25}/>
           </Nav.Link>         
         </Nav>
     </Navbar>

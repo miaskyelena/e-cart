@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import { useUser, useSupabaseClient } from '@supabase/auth-helpers-react'
 import { Navbar, Nav } from 'react-bootstrap'
-import { supabase } from '../../Client.jsx'
 import './Navigation.css'
 import "/node_modules/flag-icons/css/flag-icons.min.css";
 
@@ -11,8 +10,9 @@ const Navigation = () => {
     if (!user) {
     return (
         <>
-        <Navbar bg='light' expand='lg'>
-        <Navbar.Brand href='/'className='ms-3 brand-title'>eCart</Navbar.Brand>
+        <Navbar bg='dark' variant='dark' expand='lg'>
+        <Navbar.Brand href='/'className='ms-3 brand-title'>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='ms-auto me-2'>
@@ -25,7 +25,7 @@ const Navigation = () => {
 } else {
     return (
         <>
-        <Navbar bg='light' expand='lg' className='navigation-bar'>
+        <Navbar variant='dark' expand='lg' className='navigation-bar'>
             <Nav.Link className='ms-3'>
                 Welcome, {user.email}
                  &nbsp;

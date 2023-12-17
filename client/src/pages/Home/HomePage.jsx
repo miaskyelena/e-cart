@@ -2,39 +2,30 @@ import React, {useEffect, useState} from 'react'
 import BannerImage from '../../components/banner/BannerImage'
 import SellerBanner from '../../components/banner/SellerBanner'
 import SearchBar from '../../components/Bar/SearchBar/SearchBar'
-import ProductCarousel from '../../components/Card/ProductCarousel/ProductCarousel'
+import CardCarousel from '../../components/Carousel/CardCarousel'
 import Footer from '../../components/footer/Footer'
+import FilterBar from '../../components/Bar/FilterBar/FilterBar'
 import './HomePage.css'
-const HomePage = ( sellingProducts ) => {
-
-
-const [products, setProducts] = useState([])
-
-useEffect(() => {
-  setProducts(sellingProducts)
-}
-, [sellingProducts])
-
-console.log(products)
+import { Card } from 'react-bootstrap'
+const HomePage = ( props ) => {
 
 
   return (
     <>
       <SearchBar />
+      <FilterBar />
         <BannerImage />
         &nbsp;
-        <ProductCarousel
+        <CardCarousel
         title='All products'
-        subtitle='Products reccomended for you.'
-        data={sellingProducts.allProducts}
-       />
-        <ProductCarousel
-        title='Selling products'
-        subtitle='Products you are currently selling.'
-        data={sellingProducts.sellingProducts}
+        subtitle='Browse all products.'
+        data={props.data}
         />
-      
-        <SellerBanner />
+        <CardCarousel
+        title='Popular products'
+        subtitle='Explore the most popular products.'
+        data={[...props.data].sort((a, b) => b.likes - a.likes).slice(0, 10)}
+        />
 
       <Footer />
     </>

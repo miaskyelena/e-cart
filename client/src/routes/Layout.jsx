@@ -1,15 +1,13 @@
 import { Outlet } from 'react-router-dom';
-import Navigation from '../components/header/Navigation';
-import SearchBar from '../components/bar/SearchBar/SearchBar';
-const Layout = ({ session }) => {
+import Navigation from '../components/Header/Navigation';
 
-    return (
-        <>
-            <Navigation session={session} />
-            <Outlet/>
-
-        </>
-    );
+const Layout = () => {
+  return (
+    <>
+      <Navigation />
+      <Outlet />
+    </>
+  )
 }
 
-export default Layout;
+export default Layout

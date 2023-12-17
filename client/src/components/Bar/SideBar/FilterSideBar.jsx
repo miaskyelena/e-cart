@@ -1,21 +1,22 @@
-import React from 'react'
-import './FilterSideBar.css'
+
+import React from 'react';
+import { FaFilter } from 'react-icons/fa';
 
 const FilterSideBar = () => {
-    return (
-        <div className='filter-sidebar-container'>
-        <div className='row'>
-            <div className='col'>
-            <h4 className='filter-sidebar-title'>Filter by</h4>
-            <span className='filter-sidebar-text'>Price</span><br />
-            <span className='filter-sidebar-text'>Category</span><br />
-            <span className='filter-sidebar-text'>Brand</span><br />
-            <span className='filter-sidebar-text'>Color</span><br />
-            </div>
-        </div>
-        </div>
-    )
-}
+  return (
+    <div className="sidebar">
+      <div className="sidebar-header">
+        <FaFilter className="filter-icon" />
+        <h2>Product Categories</h2>
+      </div>
+      <ul className="category-list">
+        <li className="category-item">Category 1</li>
+        <li className="category-item">Category 2</li>
+        <li className="category-item">Category 3</li>
+        {/* Add more category items here */}
+      </ul>
+    </div>
+  );
+};
 
-export default FilterSideBar
-  
+export default FilterSideBar;

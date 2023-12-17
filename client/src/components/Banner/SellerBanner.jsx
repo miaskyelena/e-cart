@@ -1,5 +1,4 @@
 import React from 'react';
-import SellerBannerPhoto from '../../assets/images/seller.jpg';
 import { Card } from 'react-bootstrap';
 import './SellerBanner.css';
 
