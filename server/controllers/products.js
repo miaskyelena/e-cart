@@ -1,4 +1,3 @@
-import { parse } from 'dotenv'
 import { pool } from '../config/database.js'
 
 const createProduct = async (req, res) => {
@@ -6,7 +5,7 @@ const createProduct = async (req, res) => {
         const { title, price, size, image, description, condition, category, color } = req.body
 
         const results = await pool.query(
-            `INSERT INTO products (title, description. price, size, image, condition, category, color)
+            `INSERT INTO products (title, description, price, size, image, condition, category, color)
             VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
             RETURNING *`,
             [title, price, size, image, description, condition, category, color]

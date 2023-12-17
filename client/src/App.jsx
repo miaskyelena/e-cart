@@ -13,7 +13,8 @@ import CreateLisiting from './pages/create/CreateLisiting.jsx'
 import CreateListingTest from './pages/Create/CreateListingTest.jsx'
 import ErrorPage from './pages/ErrorPage.jsx'
 const App = () => {
-  const API_URL = 'http://localhost:3001'
+  const API_URL = process.env.NODE_ENV === 'production' ? 'https://ecart-client.up.railway.app' : 'http://localhost:3001'
+ 
   const [session, setSession] = useState(null)
   const [sellingProducts, setSellingProducts] = useState([])
   const [allProducts, setAllProducts] = useState([])
@@ -25,8 +26,8 @@ const App = () => {
     setSellingProducts(data)
     }
     fetchSellingProducts()
-}
-, [API_URL])
+  }
+  , [API_URL])
 
   useEffect(() => {
     const fetchAllProducts = async () => {
@@ -35,11 +36,8 @@ const App = () => {
     setAllProducts(data)
     }
     fetchAllProducts()
-}
-, [])
-
-
-  
+  }
+  , [])
 
   useEffect(() => {
     
@@ -55,17 +53,7 @@ const App = () => {
   let element = useRoutes([
     {
       path: '/',
-      element: <Layout />,
-      children: [
-        { path: '/', element: <HomePage sellingProducts={sellingProducts} allProducts={allProducts}/>},
-        { path: '/sellingProducts', element: <ReadSellingProducts data={sellingProducts}/>},
-        { path: '/allProducts', element: <ReadAllProducts data={allProducts}/>},
-        { path: '/login', element: <LoginPage />},
-        { path: '/create', element: <CreateListingTest api_url={API_URL} />},
-        { path: '/edit/:id', element: <EditListing />},
-        { path: '/products/:id', element: <ViewProduct/>}, 
-        { path: '*', element: <ErrorPage /> }    
-      ]
+      element: <CreateListingTest api_url={API_URL} />
     }
   ])
 

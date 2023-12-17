@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import './CreateListingTest.css'
-const CreateListingTest = ({ api_url }) => {
+
+const CreateListingTest = ({api_url}) => {
+
     const [newProduct, setNewProduct] = useState({
         id: 0,
         title: '',
@@ -8,13 +9,13 @@ const CreateListingTest = ({ api_url }) => {
         color: '',
         condition: '',
         category: '',
-        price: 0.0,
+        price: 0,
         image: '',
-        description: '',
+        description: ''
     })
 
     const handleChange = (event) => {
-        const { name, value } = event.target; 
+        const { name, value } = event.target
         setNewProduct( (prev) => {
             return {
                 ...prev,
@@ -23,92 +24,76 @@ const CreateListingTest = ({ api_url }) => {
         })
     }
 
+
     const createProduct = async (event) => {
         event.preventDefault()
-
         const options = {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json',
+                'Content-Type': 'application/json'
             },
-            body: JSON.stringify(newProduct),
+            body: JSON.stringify({
+                title: newProduct.title,
+                size: newProduct.size,
+                color: newProduct.color,
+                condition: newProduct.condition,
+                category: newProduct.category,
+                price: newProduct.price,
+                image: newProduct.image,
+                description: newProduct.description,
+            })
         }
 
         await fetch(`${api_url}/api/products`, options)
         window.location.href = '/'
+       
+       
+    
     }
 
+
   return (
-    <div className='create'>
+    <div>
+        <center><h3> Create New Product</h3></center>
         <form> 
-            <label htmlFor='title'>Title</label>
-            <input
-                type='text'
-                name='title'
-                id='title'
-                value={newProduct.title}
-                onChange={handleChange}
-            />
-            <label htmlFor='size'>Size</label>
-            <input
-                type='text'
-                name='size'
-                id='size'
-                value={newProduct.size}
-                onChange={handleChange}
-            />
-            <label htmlFor='color'>Color</label>
-            <input
-                type='text'
-                name='color'
-                id='color'
-                value={newProduct.color}
-                onChange={handleChange}
-            />
-            <label htmlFor='condition'>Condition</label>
-            <input
-                type='text'
-                name='condition'
-                id='condition'
-                value={newProduct.condition}
-                onChange={handleChange}
-            />
-            <label htmlFor='category'>Category</label>
-            <input
-                type='text'
-                name='category'
-                id='category'
-                value={newProduct.category}
-                onChange={handleChange}
-            />
-            <label htmlFor='price'>Price</label>
-            <input
-                type='text'
-                name='price'
-                id='price'
-                value={newProduct.price}
-                onChange={handleChange}
-            />
-            <label htmlFor='image'>Image</label>
-            <input
-                type='text'
-                name='image'
-                id='image'
-                value={newProduct.image}
-                onChange={handleChange}
-            />
-            <label htmlFor='description'>Description</label>
-            <input
-                type='text'
-                name='description'
-                id='description'
-                value={newProduct.description}
-                onChange={handleChange}
-            />
-            <input type='submit' value='Submit' onClick={createProduct} />
+            <label>Title</label><br/>
+            <input type="text" id="title" name="title" value={newProduct.title} onChange={handleChange}/><br/>
+            <br/>
+
+            <label>Size</label><br/>
+            <input type="text" id="size" name="size" value={newProduct.size} onChange={handleChange}/><br/>
+            <br/>
+
+            <label>Color</label><br/>
+            <input type="text" id="color" name="color" value={newProduct.color} onChange={handleChange}/><br/>
+            <br/>
+
+            <label>Condition</label><br/>
+            <input type="text" id="condition" name="condition" value={newProduct.condition} onChange={handleChange}/><br/>
+            <br/>
+
+            <label>Category</label><br/>
+            <input type="text" id="category" name="category" value={newProduct.category} onChange={handleChange}/><br/>
+            <br/>
+
+            <label>Price</label><br/>
+            <input type="number" id="price" name="price" value={newProduct.price} onChange={handleChange}/><br/>
+            <br/>
+
+            <label>Image</label><br/>
+            <input type="text" id="image" name="image" value={newProduct.image} onChange={handleChange}/><br/>
+            <br/>
+
+            <label>Description</label><br/>
+            <input type="text" id="description" name="description" value={newProduct.description} onChange={handleChange}/><br/>
+            <br/>
+
+            <input type="submit" value="Submit" onClick={createProduct}/>
+
         </form>
-      
     </div>
+
+   
   )
 }
 

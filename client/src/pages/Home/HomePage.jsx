@@ -33,7 +33,7 @@ console.log(products)
         subtitle='Products you are currently selling.'
         data={sellingProducts.sellingProducts}
         />
-         1 
+      
         <SellerBanner />
 
       <Footer />

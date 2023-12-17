@@ -37,11 +37,25 @@ const createProduct = async (event) => {
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify(newProduct),
+        body: JSON.stringify({
+            title: newProduct.title,
+            size: newProduct.size,
+            color: newProduct.color,
+            condition: newProduct.condition,
+            category: newProduct.category,
+            price: newProduct.price,
+            image: newProduct.image,
+            description: newProduct.description,
+        }),
     }
 
-    await fetch(`${api_url}/api/products`, options)
-    window.location.href = '/'
+    try {
+        await fetch(`${api_url}/api/products`, options)
+        window.location.href = '/'
+    }
+    catch (error) {
+        console.log(error)
+    }
 }
 
 
