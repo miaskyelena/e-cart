@@ -11,8 +11,7 @@ const productsData =
         "color":"Tan",
         "price": 195.00,
         "submittedBy": "admin",
-        "submittedOn": "2022-09-04T14:48:00",
-        "likes": 15
+        "submittedOn": "2022-09-04T14:48:00"
     },
     {
         "id": 2,
@@ -25,8 +24,7 @@ const productsData =
         "color":"Tan",
         "price": 195.00,
         "submittedBy": "admin",
-        "submittedOn": "2022-09-04T14:48:00",
-        "likes": 40
+        "submittedOn": "2022-09-04T14:48:00"
     },
     {
         "id": 3,
@@ -39,8 +37,7 @@ const productsData =
         "color":"Black",
         "price": 195.00,
         "submittedBy": "admin",
-        "submittedOn": "2022-09-04T14:48:00",
-        "likes": 25
+        "submittedOn": "2022-09-04T14:48:00"
     },
     {
         "id": 4,
@@ -53,8 +50,7 @@ const productsData =
         "color":"Tan",
         "price": 195.00,
         "submittedBy": "Sarah P.",
-        "submittedOn":"2022-09-04T14:48:00",
-        "likes": 2
+        "submittedOn":"2022-09-04T14:48:00"
     },
     {
         "id": 5,
@@ -67,8 +63,7 @@ const productsData =
         "color":"Tan",
         "price": 195.00,
         "submittedBy": "Jane M.",
-        "submittedOn":"2022-09-13T11:01:00",
-        "likes": 10
+        "submittedOn":"2022-09-13T11:01:00"
     },
     {
         "id": 6,
@@ -81,8 +76,7 @@ const productsData =
         "color":"Red",
         "price": 195.00,
         "submittedBy": "Mary P.",
-        "submittedOn":"2023-03-10T05:23:00",
-        "likes": 0
+        "submittedOn":"2023-03-10T05:23:00"
     },
     {
         "id": 7,
@@ -95,8 +89,7 @@ const productsData =
         "color":"Black",
         "price": 195.00,
         "submittedBy": "Vittoria C.",
-        "submittedOn":"2011-10-10T14:48:00",
-        "likes": 0
+        "submittedOn":"2011-10-10T14:48:00"
     },
     {
         "id": 8,
@@ -109,8 +102,7 @@ const productsData =
         "color":"Black",
         "price": 195.00,
         "submittedBy": "Katie M.",
-        "submittedOn":"2023-01-01T14:48:00",
-        "likes": 0
+        "submittedOn":"2023-01-01T14:48:00"
     },
     {
         "id": 9,
@@ -123,8 +115,7 @@ const productsData =
         "color":"Black",
         "price": 195.00,
         "submittedBy": "Olivia S.",
-        "submittedOn":"2023-04-01T07:02:00",
-        "likes": 20
+        "submittedOn":"2023-04-01T07:02:00"
     },
     {
         "id": 10,
@@ -137,8 +128,7 @@ const productsData =
         "color":"Black",
         "price": 4000.00,
         "submittedBy": "Natalie S.",
-        "submittedOn":"2023-01-10T14:48:00",
-        "likes": 130
+        "submittedOn":"2023-01-10T14:48:00"
     }
 ]
 

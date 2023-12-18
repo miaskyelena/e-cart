@@ -18,8 +18,7 @@ const createProductsTable = async () => {
             color VARCHAR(255) NOT NULL,
             price DECIMAL NOT NULL,
             submittedBy VARCHAR(255) NOT NULL,
-            submittedOn TIMESTAMP NOT NULL,
-            likes INTEGER NOT NULL
+            submittedOn TIMESTAMP NOT NULL
         );
     `
 
@@ -34,9 +33,10 @@ const createProductsTable = async () => {
 const seedGiftsTable = async () => {
     await createProductsTable();
 
+    
     productsData.forEach((product) => {
         const insertQuery = {
-        text: 'INSERT INTO products (title, size, image, description, condition, category, color, price, submittedBy, submittedOn, likes) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11)',
+        text: 'INSERT INTO products (title, size, image, description, condition, category, color, price, submittedBy, submittedOn) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)',
         }
 
         const values = [
@@ -49,8 +49,7 @@ const seedGiftsTable = async () => {
             product.color,
             product.price,
             product.submittedBy,
-            product.submittedOn,
-            product.likes
+            product.submittedOn
         ];
 
         pool.query(insertQuery, values, (err, res) => {

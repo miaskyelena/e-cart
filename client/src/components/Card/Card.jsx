@@ -19,7 +19,6 @@ const Card = (props) => {
             }),
         });
         const data = await response.json();
-        console.log(data);
     }
 
     const handleLike = () => {
