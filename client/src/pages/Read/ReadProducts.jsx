@@ -4,6 +4,7 @@ import Card from '../../components/Card/Card'
 import ReactPaginate from 'react-paginate'
 import SearchBar from '../../components/Bar/SearchBar/SearchBar'
 import FilterSideBar from '../../components/Bar/SideBar/FilterSideBar'
+import FilterBar from  '../../components/Bar/FilterBar/FilterBar'
 const ReadProducts = ( props ) => {
     const [listings, setListings] = useState([])
 
@@ -22,6 +23,7 @@ const ReadProducts = ( props ) => {
     return (
         <div className="ReadProducts">
             <SearchBar />
+            <FilterBar />
             <div className="container">
                 <div className="row mt-5">
                     <div className="col-md-12">

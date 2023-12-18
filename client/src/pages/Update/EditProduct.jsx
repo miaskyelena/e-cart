@@ -25,11 +25,10 @@ const EditProduct = () => {
             const response = await fetch(`http://localhost:3001/products/${id}`)
             const data = await response.json()
             setProduct(data)
-            setLoading(false)
         }
         fetchProductById()
     }
-    , [product])
+    , [id])
 
     const handleChange = (event) => {
         const { name, value } = event.target;
@@ -71,7 +70,7 @@ const EditProduct = () => {
   return (
     <>
     <SearchBar />
-    <Form >
+    <form >
     <Container className='view-listing mt-5 ' fluid>
         <Link to=
         {`/products/${id}`}
@@ -105,7 +104,14 @@ const EditProduct = () => {
                 <div className='d-flex justify-content-between'>
                     <h3 
                     style={{ fontWeight: 'bold', }}>
-                        <input className='form-control' type='text' placeholder={product.title} value={product.title} onChange={handleChange}/>
+                        <input
+                        className='form-control' 
+                        name='title'
+                        id='title'
+                        type='text' 
+                        placeholder={product.title} 
+                        value={product.title} 
+                        onChange={handleChange}/>
                     </h3>
                 </div>
                 <br />
@@ -123,6 +129,7 @@ const EditProduct = () => {
                     <option value='Medium'>Medium</option>
                     <option value='Large'>Large</option>
                     <option value='X-Large'>X-Large</option>
+                    <option value='OS'>One Size</option>
                 </select> 
                 &nbsp;
                 <select
@@ -200,29 +207,38 @@ const EditProduct = () => {
                             fontSize: '1.1rem',
                             fontWeight: 'bold',
                         }
-                    }><input className='form-control' type='text' placeholder={product.price} value={product.price} onChange={handleChange} /></h5>
-
+                    }><input
+                     className='form-control' 
+                     type='text'
+                     placeholder={product.price} 
+                     value={product.price}
+                     onChange={handleChange} /></h5>
                     <p className='small text-muted'>+ Shipping</p>
                 </div>
                 <br />
                 <h5 className='text-dark'>Description</h5>
                 <p className='small text-muted'>
                     <textarea className='form-control' rows='5' 
-                    placeholder={product.description}
+                    name='description'
+                    id='description'
                     value={product.description}
                     onChange={handleChange}
                     required
                     />
                 </p>
+                <div className='d-flex justify-content-between'>
+                    <input className='form-control' type='text' name='submittedby' id='submittedby' placeholder='Seller' /> &nbsp;
+                    <input className='form-control' type='text' name='submittedon' id='submittedon'  />
+                </div>
+
                 <div className='d-flex justify-content-between mt-5'>
                     <Button variant='outline-primary' className='w-100' onClick={updateProduct}>Update</Button>&nbsp;
                     <Button variant='outline-danger' className='w-100' onClick={deleteProduct}>Delete</Button>
                 </div>
-            
             </Col>
         </Row>
     </Container>
-    </Form>
+    </form>
     </>
   )
 }
