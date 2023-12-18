@@ -1,0 +1,152 @@
+[
+    {
+        "id": 1,
+        "title": "Victoria Victoria Beckham Printed Mini Dress w/ Tags",
+        "size": " Small",
+        "image":"https://product-images.therealreal.com/WVV30184_1_enlarged.jpg?width=1500",
+        "description":"Printed Mini Dress w/ Tags",
+        "condition":"Pristine",
+        "category":"Clothing",
+        "color":"Black",
+        "price": 195.00,
+        "rating": {
+            "rate": 4.5,
+            "count": 12
+        }
+    },
+    {
+        "id": 2,
+        "title": "Sarah Pacini Pleated Accents Pant Set",
+        "size": "Small",
+        "image":"https://product-images.therealreal.com/WSARP22160_1_enlarged.jpg?width=1005",
+        "description":"Pleated Accents Pant Set",
+        "condition":"Pristine",
+        "category":"Clothing",
+        "color":"Black",
+        "price": 195.00,
+        "rating": {
+            "rate": 4.5,
+            "count": 12
+        }
+    },
+    {
+        "id": 3,
+        "title": "Manolo Blahnik Leather Slingback Sandals",
+        "size": "Medium",
+        "image":"https://product-images.therealreal.com/MOO250617_1_enlarged.jpg?width=1500",
+        "description":"Leather Slingback Sandals",
+        "condition":"Pristine",
+        "category":"Clothing",
+        "color":"Black",
+        "price": 195.00,
+        "rating": {
+            "rate": 4.5,
+            "count": 12
+        }
+    },
+    {
+        "id": 4,
+        "title": "Marni Plunge Neckline Sleeveless Blouse",
+        "size": "Medium",
+        "image":"https://product-images.therealreal.com/MAN201019_1_enlarged.jpg?width=1005",
+        "description":"Plunge Neckline Sleeveless Blouse",
+        "condition":"Pristine",
+        "category":"Clothing",
+        "color":"Black",
+        "price": 195.00,
+        "rating": {
+            "rate": 4.5,
+            "count": 12
+        }
+    },
+    {
+        "id": 5,
+        "title": "Prada Tessuto Re-Edition 2000 Hobo",
+        "size": "Medium",
+        "image":"https://product-images.therealreal.com/PRA877512_1_enlarged.jpg?width=1500",
+        "description":"Tessuto Re-Edition 2000 Hobo",
+        "condition":"Pristine",
+        "category":"Clothing",
+        "color":"Black",
+        "price": 195.00,
+        "rating": {
+            "rate": 4.5,
+            "count": 12
+        }
+    },
+    {
+        "id": 6,
+        "title": "Koos Van Den Akker Vintage Knee-Length Skirt",
+        "size": "Small",
+        "image":"https://product-images.therealreal.com/KOOSC20563_1_enlarged.jpg?width=1005",
+        "description":"Vintage Knee-Length Skirt",
+        "condition":"Pristine",
+        "category":"Clothing",
+        "color":"Black",
+        "price": 195.00,
+        "rating": {
+            "rate": 4.5,
+            "count": 12
+        }
+    },
+    {
+        "id": 7,
+        "title": "D&G Vintage Midi Length Dress",
+        "size": "Medium",
+        "image":"https://product-images.therealreal.com/WDG90654_1_enlarged.jpg?width=1005",
+        "description":"Vintage Midi Length Dress",
+        "condition":"Pristine",
+        "category": "Clothing",
+        "color":"Black",
+        "price": 195.00,
+        "rating": {
+            "rate": 4.5,
+            "count": 12
+        }
+    },
+    {
+        "id": 8,
+        "title": "Anna Sui Vintage 1990's Sweater",
+        "size": "Medium",
+        "image":"https://product-images.therealreal.com/ANA34704_1_enlarged.jpg?width=1005",
+        "description":"Vintage 1990's Sweater",
+        "condition":"Pristine",
+        "category":"Clothing",
+        "color":"Black",
+        "price": 195.00,
+        "rating": {
+            "rate": 4.5,
+            "count": 12
+        }
+    },
+    {
+        "id": 9,
+        "title": "Chloé Vintage Knee-Length Skirt",
+        "size": "Small",
+        "image":"https://product-images.therealreal.com/CHL269367_1_enlarged.jpg?width=1005",
+        "description":"Vintage Knee-Length Skirt",
+        "condition":"Pristine", 
+        "category":"Clothing",
+        "color":"Black",
+        "price": 195.00,
+        "rating": {
+            "rate": 4.5,
+            "count": 12
+        }
+    },
+    {
+        "id": 10,
+        "title": "Chanel Vintage 1990's Tweed Skirt Suit",
+        "size": "Small",
+        "image":"https://product-images.therealreal.com/CHA948446_1_enlarged.jpg?width=1500",
+        "description":"Small CC Filigree Vanity Case",
+        "condition":"Pristine",
+        "category":"Clothing",
+        "color":"Black",
+        "price": 195.00,
+        "rating": {
+            "rate": 4.5,
+            "count": 12
+        }
+    }
+]
